@@ -1,5 +1,5 @@
-import SimpleLightbox from "simplelightbox";
-import "simplelightbox/dist/simple-lightbox.min.css";
+import SimpleLightbox from 'simplelightbox';
+import 'simplelightbox/dist/simple-lightbox.min.css';
 
 const images = [
   {
@@ -84,7 +84,9 @@ function createGalleryItem(image) {
 
 function renderGallery() {
   if (!galleryContainer) {
-    console.error("Контейнер галереї з класом '.gallery' не знайдено у файлі 1-gallery.html!");
+    console.error(
+      "Контейнер галереї з класом '.gallery' не знайдено у файлі 1-gallery.html!"
+    );
     return;
   }
   const galleryMarkup = images.map(createGalleryItem).join('');
